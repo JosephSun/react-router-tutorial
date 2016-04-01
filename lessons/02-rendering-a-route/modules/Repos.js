@@ -1,6 +1,6 @@
 import React from 'react';
 
-export defualt React.createClass({
+export default React.createClass({
   render() {
     return <div> Repos </div>
   }

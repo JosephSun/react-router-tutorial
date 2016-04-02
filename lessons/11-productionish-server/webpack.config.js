@@ -1,3 +1,5 @@
+var webpack = require('webpack')
+
 module.exports = {
   entry: './index.js',
 
@@ -16,5 +18,5 @@ module.exports = {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.optimize.OccurrenceUglifyJsPlugin()
-  ] : [],
+  ] : []
 }

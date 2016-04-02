@@ -10,6 +10,9 @@ import Home from './modules/Home'
 render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
+
+    <IndexRoute component={Home}/>
+
       <Route path="/repos" component={Repos}>
         <Route path="/repos/:userName/:repoName" component={Repo}/>
       </Route>

@@ -4,6 +4,7 @@ const compression = require('compression')
 
 const app = express();
 
+app.use(compression());
 app.use(express.static(__dirname, 'public'));
 
 app.get('*', function(req, res) {

@@ -1,6 +1,6 @@
-import express from 'express';
-import path from 'path';
-import compression from 'compresson';
+const express = require('express')
+const path = require('path')
+const compression = require('compression')
 
 const app = express();
 

@@ -1,10 +1,11 @@
 const express = require('express')
 const path = require('path')
-const compression = require('compression')
+var compression = require('compression')
 
-const app = express();
+var app = express()
+// must be first!
+app.use(compression())
 
-app.use(compression());
 app.use(express.static(__dirname, 'public'));
 
 app.get('*', function(req, res) {
